@@ -9,6 +9,9 @@ RUN curl -s -L https://github.com/loft-sh/devspace/releases/latest | \
         xargs -n 1 curl -L -o devspace && chmod +x devspace && \
     sudo install devspace /usr/local/bin;
 
+# Install Loft plugin
+RUN devspace add plugin https://github.com/loft-sh/loft-devspace-plugin
+
 ARG KUBECTL_VERSION
 
 ## Install Kubectl
