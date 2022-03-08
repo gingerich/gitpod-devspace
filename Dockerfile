@@ -35,4 +35,4 @@ RUN set -x; cd "$(mktemp -d)" && \
     tar zxvf "${KREW}.tar.gz" && \
     ./"${KREW}" install krew
 
-ENV PATH="${KREW_ROOT:-$HOME/.krew}:${PATH}"
+ENV PATH="${KREW_ROOT:-$HOME/.krew}/bin:${PATH}"
