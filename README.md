@@ -1,2 +1,3 @@
 # gitpod-devspace
-Ready-to-use in-cluster dev environment using DevSpace + Gitpod
+
+Ready-to-use in-cluster dev environment launched from a remote workspace using DevSpace + Gitpod

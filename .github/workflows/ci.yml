@@ -42,5 +42,5 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            KUBECTL_VERSION=v1.23.4
+            KUBECTL_VERSION=v1.24.2
             ${{ endsWith(matrix.images, 'full') && 'GITPOD_IMAGE=gitpod/workspace-full:latest' }}

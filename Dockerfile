@@ -12,7 +12,7 @@ RUN curl -s -L https://github.com/loft-sh/devspace/releases/latest | \
 # Install Loft plugin
 RUN devspace add plugin https://github.com/loft-sh/loft-devspace-plugin
 
-ARG KUBECTL_VERSION
+ARG KUBECTL_VERSION=$(curl -L -s https://dl.k8s.io/release/stable.txt)
 
 ## Install Kubectl
 RUN curl -LO https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
